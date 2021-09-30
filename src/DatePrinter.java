@@ -6,13 +6,13 @@ public class DatePrinter implements Runnable {
     Date date = new Date();
 
     public DatePrinter() {
-        for (int i = 0; i < 20; i++) {
-            System.out.println("Current time and date: " + sdf.format(date));
-        }
+
     }
 
     @Override
     public void run() {
-
+        for (int i = 0; i < 200000; i++) {
+            System.out.println("Current time and date: " + sdf.format(date));
+        }
     }
 }
